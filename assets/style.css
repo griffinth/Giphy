@@ -8,7 +8,7 @@ img {
 
 form,
 .showBtn {
-    background-color: #474747;
+    background-color: grey;
     color: white;
 }
 
@@ -27,7 +27,7 @@ form {
 
 #addShow {
     background-color: white;
-    color: #474747;
+    color: grey;
     border: none;
 }
 
@@ -36,7 +36,7 @@ input {
 }
 
 button {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: red;
     border: none;
 }
 
