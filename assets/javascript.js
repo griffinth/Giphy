@@ -1,4 +1,4 @@
-var showTitle = ['The Office', 'Parks and Recreation', 'Breaking Bad', 'The Simpsons', 'Future Man', 'Lost', 'Altered Carbon', 'Comedians in Cars Getting Coffee', 'Happy', 'Black Mirror', 'Full House', 'Rugrats', 'Rockos Modern Life', 'Mindhunter', 'Conan', 'Family Guy'];
+var topics = ['The Office', 'Parks and Recreation', 'Breaking Bad', 'The Simpsons', 'Future Man', 'Lost', 'Altered Carbon', 'Comedians in Cars Getting Coffee', 'Happy', 'Black Mirror', 'Full House', 'Rugrats', 'Rockos Modern Life', 'Mindhunter', 'Conan', 'Family Guy'];
 var currentGif;
 var pausedGif;
 var animatedGif;
@@ -7,9 +7,9 @@ var stillGif;
 //creates buttons
 function createButtons() {
 	$('#TVButtons').empty();
-	for (var i = 0; i < showTitle.length; i++) {
-		var showBtn = $('<button>').text(showTitle[i]).addClass('showBtn').attr({
-			'data-name': showTitle[i]
+	for (var i = 0; i < topics.length; i++) {
+		var showBtn = $('<button>').text(topics[i]).addClass('showBtn').attr({
+			'data-name': topics[i]
 		});
 		$('#TVButtons').append(showBtn);
 	}
@@ -53,7 +53,7 @@ $(document).on('mouseleave', '.playOnHover', function () {
 //sets a button from input
 $('#addShow').on('click', function () {
 	var newShow = $('#newShowInput').val().trim();
-	showTitle.push(newShow);
+	topics.push(newShow);
 	createButtons();
 	return false;
 });
