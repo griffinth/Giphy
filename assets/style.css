@@ -1,5 +1,5 @@
 body {
-    background: url();
+    background: url(assets/images/background.jpg);
 }
 
 img {
@@ -27,7 +27,7 @@ form {
 
 #addShow {
     background-color: white;
-    color: grey;
+    color: black;
     border: none;
 }
 
