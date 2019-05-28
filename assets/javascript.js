@@ -42,7 +42,7 @@ function createButtons() {
 	});
 }
 
-//animates and pauses gif on hover
+//animates and pauses gif 
 $(document).on('mouseover', '.playOnHover', function () {
 	$(this).attr('src', $(this).data('animated'));
 });
@@ -50,7 +50,7 @@ $(document).on('mouseleave', '.playOnHover', function () {
 	$(this).attr('src', $(this).data('paused'));
 });
 
-//sets a button from input
+//sets a button from from the newShowInput
 $('#addShow').on('click', function () {
 	var newShow = $('#newShowInput').val().trim();
 	topics.push(newShow);
